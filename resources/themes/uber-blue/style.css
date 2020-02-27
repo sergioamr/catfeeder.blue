@@ -1,0 +1,422 @@
+/* -------------------------------------------------------------------------- */
+/* -----| GENERAL |---------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+html {
+    background-color: #fdfdfd;
+    font-size: 100%;
+}
+
+body {
+    background-color: #fdfdfd;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif, Verdana;
+    font-size: .8em;
+
+}
+
+#galleryWrapper {
+    background-color: #fdfdfd;
+    border-radius: 5px;
+    margin: 0px auto;
+    padding: 40px;
+    width: 950px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+h1 {
+    color: #333;
+    font-size: 1.6em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+
+h4 {
+    padding-top: 10px;
+
+    color: #AAA;
+    margin: 0;
+}
+
+#galleryListWrapper {
+    /* NULL */
+}
+
+#galleryFooter {
+    border-top: none !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
+    color: #FFF;
+}
+
+#galleryFooter .credit a {
+    color: #369;
+}
+
+#galleryFooter .credit a:hover {
+    color: #333;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* -----| GALLERY LIST |----------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+#galleryList {
+    margin: 0;
+    padding: 0 4px;
+}
+
+#galleryList li {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    margin: 5px 10px;
+    padding: 0;
+}
+
+#galleryList li a {
+    background-color: #15242A !important;
+    border-top: 1px solid #132228;
+    border-left: 1px solid #132228;
+    border-right: 1px solid #204656;
+    border-bottom: 1px solid #204656;
+    display: block;
+    padding: 4px;
+}
+
+#galleryList li a:hover {
+    background-color: #1E2D34 !important;
+}
+
+#galleryList li a img {
+    border: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/* -----| GALLERY FOOTER |--------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+#galleryFooter {
+    border-top: 1px solid #FFF;
+    margin-top: 10px;
+    padding: 3px;
+}
+
+#credit {
+    float: right;
+    font-size: .95em;
+    margin: 4px 0;
+}
+
+#galleryFooter #credit a {
+    color: #FFF;
+}
+
+
+/* ---------------------------------------- */
+/* ----|  PAGINATION  |-------------------- */
+/* ---------------------------------------- */
+
+#galleryPagination {
+    color: #FFF;
+    float: left;
+    font-size: .95em;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center;
+}
+
+#galleryPagination li {
+    color: #337ab7;
+    border: 1px solid transparent;
+    display: block;
+    float: left;
+    list-style: none;
+    margin-right: 1px;
+    color: #FFF;
+}
+
+#galleryPagination li:hover {
+    background-color: #1E2D34;
+    border-top: 1px solid #132228;
+    border-left: 1px solid #132228;
+    border-right: 1px solid #204656;
+    border-bottom: 1px solid #204656;
+}
+
+#galleryPagination li.title {
+    background: transparent url(../../page_white_stack.png) no-repeat left center;
+    border: 1px solid transparent;
+    font-weight: normal;
+    color: #337ab7;
+    padding: 3px 6px 3px 22px;
+}
+
+#galleryPagination li a, #galleryPagination li a:visited {
+    color: #337ab7;
+    display: block;
+    padding: 3px 6px;
+    text-decoration: none;
+}
+
+#galleryPagination li.current {
+    color: #FFF;
+    background-color: #15242A;
+    border-top: 1px solid #132228;
+    border-left: 1px solid #132228;
+    border-right: 1px solid #204656;
+    border-bottom: 1px solid #204656;
+    font-weight: bold;
+    padding: 3px 6px;
+}
+
+#galleryPagination li.inactive {
+    background-color: transparent;
+    color: #15242A;
+    border: 1px solid transparent;
+    display: block;
+    padding: 3px 6px;
+}
+
+
+/* ---------------------------------------- */
+/* ----|  SYSTEM MESSAGES  |--------------- */
+/* ---------------------------------------- */
+
+#systemMessages {
+    margin: 0;
+}
+
+#systemMessages li {
+    background-color: #FFF;
+    line-height: 1.4em;
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+    text-shadow: none;
+}
+
+#systemMessages li.notice {
+    background-color: #CCF;
+}
+
+#systemMessages li.success {
+    background-color: #CFC;
+}
+
+#systemMessages li.error {
+    background-color: #FCC;
+}
+
+
+/* ---------------------------------------- */
+/* ----|  MISCELLANEOUS  |----------------- */
+/* ---------------------------------------- */
+
+.line {
+    background-color: #24404C;
+    border-bottom: 1px solid #416371;
+    height: 1px;
+    margin: 2em 0;
+    overflow: hidden;
+}
+
+#galleryWrapper .line {
+    background-color: #15242A;
+    border-bottom-color: #204656;
+    margin: 10px 0;
+}
+
+#cboxWrapper {
+    text-shadow: none !important;
+}
+
+#cboxCurrent {
+    display: none !important;
+}
+
+#cboxTitle {
+    font-size: 1em !important;
+}
+
+a:active, a:focus{outline:none}
+
+#scroll-pane,.scroll-pane { background-color:white;float:left;overflow: auto; width: 420px; height:300px;position:relative;border:1px solid gray;margin-left:50px;margin-bottom:25px;display:inline}
+.scroll-content-item {background-color:#fcfcfc;color:#003366;width:100px;height:100px;float:left;margin:10px;font-size:3em;line-height:96px;text-align:center;border:1px solid gray;display:inline;}
+
+/*CYCLER - COMMON*/
+.container{height:180px;float:center;}
+
+/*MAIN*/
+
+.cycler {float:left; width:400px}
+.cycler img{position:absolute;z-index:1;background-color:white}
+.cycler img.active{z-index:3}
+
+/* Container needed to position the button. Adjust the width as needed */
+.container_btn {
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image responsive */
+.container_btn img {
+  width: 100px;
+  heigth: 100px;
+}
+
+.image_thumb {
+    color: gray;
+    width: 150px;
+    border: 1px;
+    padding: 1px 1px;
+    background-color: #fff
+}
+
+.probsdiv {
+    color: black;
+    width: 50px;
+    border: 1px;
+    padding: 1px 1px;
+    border-color: #000;
+
+    position:absolute;
+    top: 3px;
+    right: -50px;
+    width: 32px;
+    height: 32px;
+}
+
+.food_view {
+    padding: 3px 3px;
+    opacity: 0.9;
+    border: 1px;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container_btn .btn_fraggle {
+  position: absolute;
+  top: 10%;
+  left: 20px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  opacity: 0.5;
+  color: white;
+  font-size: 8px;
+  padding: 1px 1px;
+  border: none;
+  cursor: pointer;
+  border-radius: 1px;
+}
+
+.container_btn .btn_rock {
+  position: absolute;
+  top: 10%;
+  left: 80px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  opacity: 0.5;
+  color: white;
+  font-size: 8px;
+  padding: 1px 1px;
+  border: none;
+  cursor: pointer;
+  border-radius: 1px;
+}
+
+.container_btn .btn_empty {
+  position: absolute;
+  top: 90%;
+  left: 85px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  opacity: 0.5;
+  color: white;
+  font-size: 8px;
+  padding: 1px 1px;
+  border: none;
+  cursor: pointer;
+  border-radius: 1px;
+}
+
+.container_btn .btn_random {
+  position: absolute;
+  top: 90%;
+  left: 48px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  opacity: 0.5;
+  color: white;
+  font-size: 8px;
+  padding: 1px 1px;
+  border: none;
+  cursor: pointer;
+  border-radius: 1px;
+}
+
+.container_btn .btn_food {
+  position: absolute;
+  top: 90%;
+  left: 14px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  opacity: 0.5;
+  color: white;
+  font-size: 8px;
+  padding: 1px 1px;
+  border: none;
+  cursor: pointer;
+  border-radius: 1px;
+}
+
+.container_btn .btn_classifier {
+    border: none;
+    background:none !important;
+    cursor: pointer;
+}
+
+.container_btn .btn_fraggle:hover {
+  background-color: black;
+}
+
+body { font: 12px Arial; color: white;}
+
+.line {
+fill: none;
+stroke: steelblue;
+stroke-width: 1.5px;
+}
+
+path {
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: #aaa;
+}
+
+.axis--x path {
+display: none;
+color: white;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    fill: #aaa;
+}

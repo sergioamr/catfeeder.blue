@@ -1,0 +1,10 @@
+*.mp4
+downloads
+gallery-images/
+classifier/
+*.swp
+samart
+template
+convnet_64/output/
+convnet/output/
+resources/cache
